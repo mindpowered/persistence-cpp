@@ -14,36 +14,37 @@
 #include <persistence/_Persistence/Mutator.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_9dae053d9ec60bd7_178_new,"persistence._Persistence.Mutator","new",0xb5d6dd75,"persistence._Persistence.Mutator.new","persistence/Persistence.hx",178,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9dae053d9ec60bd7_173_boot,"persistence._Persistence.Mutator","boot",0x5e43e97d,"persistence._Persistence.Mutator.boot","persistence/Persistence.hx",173,0x9767c4cf)
+HX_DEFINE_STACK_FRAME(_hx_pos_9dae053d9ec60bd7_204_new,"persistence._Persistence.Mutator","new",0xb5d6dd75,"persistence._Persistence.Mutator.new","persistence/Persistence.hx",204,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9dae053d9ec60bd7_198_boot,"persistence._Persistence.Mutator","boot",0x5e43e97d,"persistence._Persistence.Mutator.boot","persistence/Persistence.hx",198,0x9767c4cf)
 namespace persistence{
 namespace _Persistence{
 
-void Mutator_obj::__construct(::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper){
-            	HX_STACKFRAME(&_hx_pos_9dae053d9ec60bd7_178_new)
-HXLINE( 179)		bool _hx_tmp;
-HXDLIN( 179)		if (!(::Std_obj::isOfType(strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
-HXLINE( 179)			_hx_tmp = !(::Reflect_obj::isFunction(strategyMethod));
+void Mutator_obj::__construct(::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper,bool useRecordDataAsParams){
+            	HX_STACKFRAME(&_hx_pos_9dae053d9ec60bd7_204_new)
+HXLINE( 205)		bool _hx_tmp;
+HXDLIN( 205)		if (!(::Std_obj::isOfType(strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
+HXLINE( 205)			_hx_tmp = !(::Reflect_obj::isFunction(strategyMethod));
             		}
             		else {
-HXLINE( 179)			_hx_tmp = false;
+HXLINE( 205)			_hx_tmp = false;
             		}
-HXDLIN( 179)		if (_hx_tmp) {
-HXLINE( 180)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
+HXDLIN( 205)		if (_hx_tmp) {
+HXLINE( 206)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
             		}
-HXLINE( 182)		bool _hx_tmp1;
-HXDLIN( 182)		if (!(::Std_obj::isOfType(updateMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
-HXLINE( 182)			_hx_tmp1 = !(::Reflect_obj::isFunction(updateMapper));
+HXLINE( 208)		bool _hx_tmp1;
+HXDLIN( 208)		if (!(::Std_obj::isOfType(updateMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
+HXLINE( 208)			_hx_tmp1 = !(::Reflect_obj::isFunction(updateMapper));
             		}
             		else {
-HXLINE( 182)			_hx_tmp1 = false;
+HXLINE( 208)			_hx_tmp1 = false;
             		}
-HXDLIN( 182)		if (_hx_tmp1) {
-HXLINE( 183)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("updateMapper must be a string or function",e1,0d,80,87)));
+HXDLIN( 208)		if (_hx_tmp1) {
+HXLINE( 209)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("updateMapper must be a string or function",e1,0d,80,87)));
             		}
-HXLINE( 185)		this->recordType = recordType;
-HXLINE( 186)		this->strategyMethod = strategyMethod;
-HXLINE( 187)		this->updateMapper = updateMapper;
+HXLINE( 211)		this->recordType = recordType;
+HXLINE( 212)		this->strategyMethod = strategyMethod;
+HXLINE( 213)		this->updateMapper = updateMapper;
+HXLINE( 214)		this->useRecordDataAsParams = useRecordDataAsParams;
             	}
 
 Dynamic Mutator_obj::__CreateEmpty() { return new Mutator_obj; }
@@ -53,7 +54,7 @@ void *Mutator_obj::_hx_vtable = 0;
 Dynamic Mutator_obj::__Create(::hx::DynamicArray inArgs)
 {
 	::hx::ObjectPtr< Mutator_obj > _hx_result = new Mutator_obj();
-	_hx_result->__construct(inArgs[0],inArgs[1],inArgs[2]);
+	_hx_result->__construct(inArgs[0],inArgs[1],inArgs[2],inArgs[3]);
 	return _hx_result;
 }
 
@@ -62,16 +63,16 @@ bool Mutator_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 
-::hx::ObjectPtr< Mutator_obj > Mutator_obj::__new(::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper) {
+::hx::ObjectPtr< Mutator_obj > Mutator_obj::__new(::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper,bool useRecordDataAsParams) {
 	::hx::ObjectPtr< Mutator_obj > __this = new Mutator_obj();
-	__this->__construct(recordType,strategyMethod,updateMapper);
+	__this->__construct(recordType,strategyMethod,updateMapper,useRecordDataAsParams);
 	return __this;
 }
 
-::hx::ObjectPtr< Mutator_obj > Mutator_obj::__alloc(::hx::Ctx *_hx_ctx,::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper) {
+::hx::ObjectPtr< Mutator_obj > Mutator_obj::__alloc(::hx::Ctx *_hx_ctx,::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper,bool useRecordDataAsParams) {
 	Mutator_obj *__this = (Mutator_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(Mutator_obj), true, "persistence._Persistence.Mutator"));
 	*(void **)__this = Mutator_obj::_hx_vtable;
-	__this->__construct(recordType,strategyMethod,updateMapper);
+	__this->__construct(recordType,strategyMethod,updateMapper,useRecordDataAsParams);
 	return __this;
 }
 
@@ -85,6 +86,7 @@ void Mutator_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(recordType,"recordType");
 	HX_MARK_MEMBER_NAME(strategyMethod,"strategyMethod");
 	HX_MARK_MEMBER_NAME(updateMapper,"updateMapper");
+	HX_MARK_MEMBER_NAME(useRecordDataAsParams,"useRecordDataAsParams");
 	HX_MARK_END_CLASS();
 }
 
@@ -93,6 +95,7 @@ void Mutator_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(recordType,"recordType");
 	HX_VISIT_MEMBER_NAME(strategyMethod,"strategyMethod");
 	HX_VISIT_MEMBER_NAME(updateMapper,"updateMapper");
+	HX_VISIT_MEMBER_NAME(useRecordDataAsParams,"useRecordDataAsParams");
 }
 
 ::hx::Val Mutator_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
@@ -106,6 +109,9 @@ void Mutator_obj::__Visit(HX_VISIT_PARAMS)
 		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"strategyMethod") ) { return ::hx::Val( strategyMethod ); }
+		break;
+	case 21:
+		if (HX_FIELD_EQ(inName,"useRecordDataAsParams") ) { return ::hx::Val( useRecordDataAsParams ); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -121,6 +127,9 @@ void Mutator_obj::__Visit(HX_VISIT_PARAMS)
 		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"strategyMethod") ) { strategyMethod=inValue.Cast<  ::Dynamic >(); return inValue; }
+		break;
+	case 21:
+		if (HX_FIELD_EQ(inName,"useRecordDataAsParams") ) { useRecordDataAsParams=inValue.Cast< bool >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
@@ -130,6 +139,7 @@ void Mutator_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("recordType",eb,b1,5b,61));
 	outFields->push(HX_("strategyMethod",b4,fb,77,6e));
 	outFields->push(HX_("updateMapper",aa,7a,e5,b8));
+	outFields->push(HX_("useRecordDataAsParams",7a,18,5d,80));
 	super::__GetFields(outFields);
 };
 
@@ -138,6 +148,7 @@ static ::hx::StorageInfo Mutator_obj_sMemberStorageInfo[] = {
 	{::hx::fsString,(int)offsetof(Mutator_obj,recordType),HX_("recordType",eb,b1,5b,61)},
 	{::hx::fsObject /*  ::Dynamic */ ,(int)offsetof(Mutator_obj,strategyMethod),HX_("strategyMethod",b4,fb,77,6e)},
 	{::hx::fsObject /*  ::Dynamic */ ,(int)offsetof(Mutator_obj,updateMapper),HX_("updateMapper",aa,7a,e5,b8)},
+	{::hx::fsBool,(int)offsetof(Mutator_obj,useRecordDataAsParams),HX_("useRecordDataAsParams",7a,18,5d,80)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *Mutator_obj_sStaticStorageInfo = 0;
@@ -147,6 +158,7 @@ static ::String Mutator_obj_sMemberFields[] = {
 	HX_("recordType",eb,b1,5b,61),
 	HX_("strategyMethod",b4,fb,77,6e),
 	HX_("updateMapper",aa,7a,e5,b8),
+	HX_("useRecordDataAsParams",7a,18,5d,80),
 	::String(null()) };
 
 ::hx::Class Mutator_obj::__mClass;
@@ -177,8 +189,8 @@ void Mutator_obj::__register()
 void Mutator_obj::__boot()
 {
 {
-            	HX_STACKFRAME(&_hx_pos_9dae053d9ec60bd7_173_boot)
-HXDLIN( 173)		__mClass->__meta__ =  ::Dynamic(::hx::Anon_obj::Create(1)
+            	HX_STACKFRAME(&_hx_pos_9dae053d9ec60bd7_198_boot)
+HXDLIN( 198)		__mClass->__meta__ =  ::Dynamic(::hx::Anon_obj::Create(1)
             			->setFixed(0,HX_("obj",f7,8f,54,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("SuppressWarnings",0c,d3,d2,00),::cpp::VirtualArray_obj::__new(1)->init(0,HX_("checkstyle:FieldDocComment",70,56,1b,20))))));
             	}

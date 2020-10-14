@@ -14,6 +14,7 @@
  * Provides a way of storing data for mindpowered packages.
  * When mindpowered packages need to persist data, they will use Get and Mutate, which in turn will call the Mutators and Getters you have set up.
  * You can set up the Mutators and Getters however you like whether to access a database such as MySQL or MongoDB, or simply write and read from text files.
+ * Note: when using a mapping (updateMapper, queryMapper, resultMapper), the data will be passed in as the first argument to the mapping function.
  */
 class Persistence {
 public:
@@ -24,8 +25,9 @@ public:
 	 * @param operationName action being performed on the record (eg. insert, update)
 	 * @param strategyMethod method to call to actually perform the mutation
 	 * @param updateMapper method to call on recordData before calling strategyMethod with the results
+	 * @param useRecordDataAsParams if set to true, the recordData will be passed as the arguments to strategyMethod, rather than as the first argument
 	*/
-	void AddMutator(std::string recordType, std::string operationName, ::maglev::CppAny strategyMethod, ::maglev::CppAny updateMapper) {
+	void AddMutator(std::string recordType, std::string operationName, ::maglev::CppAny strategyMethod, ::maglev::CppAny updateMapper, bool useRecordDataAsParams) {
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
@@ -40,6 +42,9 @@ public:
 		::maglev::CppAny param3;
 		param3 = updateMapper;
 		myargs.push_back(param3);
+		::maglev::CppAny param4;
+		param4.setBool(useRecordDataAsParams);
+		myargs.push_back(param4);
 		bus->call("Persistence.AddMutator", args);
 	}
 
@@ -50,8 +55,9 @@ public:
 	 * @param strategyMethod method to call to actually perform the data retrieval
 	 * @param queryMapper method to call on queryValues before calling strategyMethod with the results
 	 * @param resultMapper method to call on data returned from the strategyMethod before returning the results
+	 * @param useQueryValuesAsParams if set to true, the queryValues will be passed as the arguments to strategyMethod, rather than as the first argument
 	*/
-	void AddGetter(std::string recordType, std::string operationName, ::maglev::CppAny strategyMethod, ::maglev::CppAny queryMapper, ::maglev::CppAny resultMapper) {
+	void AddGetter(std::string recordType, std::string operationName, ::maglev::CppAny strategyMethod, ::maglev::CppAny queryMapper, ::maglev::CppAny resultMapper, bool useQueryValuesAsParams) {
 		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
@@ -69,6 +75,9 @@ public:
 		::maglev::CppAny param4;
 		param4 = resultMapper;
 		myargs.push_back(param4);
+		::maglev::CppAny param5;
+		param5.setBool(useQueryValuesAsParams);
+		myargs.push_back(param5);
 		bus->call("Persistence.AddGetter", args);
 	}
 

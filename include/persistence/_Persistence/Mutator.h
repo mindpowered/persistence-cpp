@@ -22,13 +22,13 @@ class HXCPP_CLASS_ATTRIBUTES Mutator_obj : public ::hx::Object
 	public:
 		enum { _hx_ClassId = 0x1e10b1a7 };
 
-		void __construct(::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper);
+		void __construct(::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper,bool useRecordDataAsParams);
 		inline void *operator new(size_t inSize, bool inContainer=true,const char *inName="persistence._Persistence.Mutator")
 			{ return ::hx::Object::operator new(inSize,inContainer,inName); }
 		inline void *operator new(size_t inSize, int extra)
 			{ return ::hx::Object::operator new(inSize+extra,true,"persistence._Persistence.Mutator"); }
-		static ::hx::ObjectPtr< Mutator_obj > __new(::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper);
-		static ::hx::ObjectPtr< Mutator_obj > __alloc(::hx::Ctx *_hx_ctx,::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper);
+		static ::hx::ObjectPtr< Mutator_obj > __new(::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper,bool useRecordDataAsParams);
+		static ::hx::ObjectPtr< Mutator_obj > __alloc(::hx::Ctx *_hx_ctx,::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper,bool useRecordDataAsParams);
 		static void * _hx_vtable;
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(::hx::DynamicArray inArgs);
@@ -49,6 +49,7 @@ class HXCPP_CLASS_ATTRIBUTES Mutator_obj : public ::hx::Object
 		::String recordType;
 		 ::Dynamic strategyMethod;
 		 ::Dynamic updateMapper;
+		bool useRecordDataAsParams;
 };
 
 } // end namespace persistence

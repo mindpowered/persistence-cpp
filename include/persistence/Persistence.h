@@ -54,10 +54,10 @@ class HXCPP_CLASS_ATTRIBUTES Persistence_obj : public ::hx::Object
 		 ::haxe::ds::StringMap mutators;
 		 ::haxe::ds::StringMap getters;
 		 ::maglev::MagLev maglev;
-		void addMutator(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic updateMapper);
+		void addMutator(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic updateMapper, ::Dynamic useRecordDataAsParams);
 		::Dynamic addMutator_dyn();
 
-		void addGetter(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper);
+		void addGetter(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper, ::Dynamic useQueryValuesAsParams);
 		::Dynamic addGetter_dyn();
 
 		void mutate(::String recordType,::String operationName, ::Dynamic recordData);

@@ -22,13 +22,13 @@ class HXCPP_CLASS_ATTRIBUTES Getter_obj : public ::hx::Object
 	public:
 		enum { _hx_ClassId = 0x2cce5e02 };
 
-		void __construct(::String recordType, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper);
+		void __construct(::String recordType, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper,bool useQueryValuesAsParams);
 		inline void *operator new(size_t inSize, bool inContainer=true,const char *inName="persistence._Persistence.Getter")
 			{ return ::hx::Object::operator new(inSize,inContainer,inName); }
 		inline void *operator new(size_t inSize, int extra)
 			{ return ::hx::Object::operator new(inSize+extra,true,"persistence._Persistence.Getter"); }
-		static ::hx::ObjectPtr< Getter_obj > __new(::String recordType, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper);
-		static ::hx::ObjectPtr< Getter_obj > __alloc(::hx::Ctx *_hx_ctx,::String recordType, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper);
+		static ::hx::ObjectPtr< Getter_obj > __new(::String recordType, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper,bool useQueryValuesAsParams);
+		static ::hx::ObjectPtr< Getter_obj > __alloc(::hx::Ctx *_hx_ctx,::String recordType, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper,bool useQueryValuesAsParams);
 		static void * _hx_vtable;
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(::hx::DynamicArray inArgs);
@@ -50,6 +50,7 @@ class HXCPP_CLASS_ATTRIBUTES Getter_obj : public ::hx::Object
 		 ::Dynamic strategyMethod;
 		 ::Dynamic queryMapper;
 		 ::Dynamic resultMapper;
+		bool useQueryValuesAsParams;
 };
 
 } // end namespace persistence

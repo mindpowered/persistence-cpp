@@ -52,6 +52,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLev_obj : public ::hx::Object
 		static  ::maglev::MagLev getInstance(::String key);
 		static ::Dynamic getInstance_dyn();
 
+		static  ::Dynamic clean( ::Dynamic arg);
+		static ::Dynamic clean_dyn();
+
 		 ::haxe::ds::StringMap _methods;
 		 ::haxe::ds::StringMap _listeners;
 		void _hx_register(::String method, ::Dynamic callback);

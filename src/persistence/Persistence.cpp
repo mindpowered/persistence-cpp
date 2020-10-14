@@ -31,18 +31,18 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_20_new,"persistence.Persistence","new",0x1c38c4a2,"persistence.Persistence.new","persistence/Persistence.hx",20,0x9767c4cf)
-HX_DEFINE_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_31_new,"persistence.Persistence","new",0x1c38c4a2,"persistence.Persistence.new","persistence/Persistence.hx",31,0x9767c4cf)
-HX_DEFINE_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_46_new,"persistence.Persistence","new",0x1c38c4a2,"persistence.Persistence.new","persistence/Persistence.hx",46,0x9767c4cf)
-HX_DEFINE_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_53_new,"persistence.Persistence","new",0x1c38c4a2,"persistence.Persistence.new","persistence/Persistence.hx",53,0x9767c4cf)
+HX_DEFINE_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_35_new,"persistence.Persistence","new",0x1c38c4a2,"persistence.Persistence.new","persistence/Persistence.hx",35,0x9767c4cf)
+HX_DEFINE_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_54_new,"persistence.Persistence","new",0x1c38c4a2,"persistence.Persistence.new","persistence/Persistence.hx",54,0x9767c4cf)
+HX_DEFINE_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_61_new,"persistence.Persistence","new",0x1c38c4a2,"persistence.Persistence.new","persistence/Persistence.hx",61,0x9767c4cf)
 HX_DEFINE_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_16_new,"persistence.Persistence","new",0x1c38c4a2,"persistence.Persistence.new","persistence/Persistence.hx",16,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_61_addMutator,"persistence.Persistence","addMutator",0xab434ebf,"persistence.Persistence.addMutator","persistence/Persistence.hx",61,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_63_addMutator,"persistence.Persistence","addMutator",0xab434ebf,"persistence.Persistence.addMutator","persistence/Persistence.hx",63,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_69_addGetter,"persistence.Persistence","addGetter",0xa800a5ce,"persistence.Persistence.addGetter","persistence/Persistence.hx",69,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_71_addGetter,"persistence.Persistence","addGetter",0xa800a5ce,"persistence.Persistence.addGetter","persistence/Persistence.hx",71,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_74_addGetter,"persistence.Persistence","addGetter",0xa800a5ce,"persistence.Persistence.addGetter","persistence/Persistence.hx",74,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_81_mutate,"persistence.Persistence","mutate",0x1e0a9484,"persistence.Persistence.mutate","persistence/Persistence.hx",81,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_116_get,"persistence.Persistence","get",0x1c3374d8,"persistence.Persistence.get","persistence/Persistence.hx",116,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_165_calcKey,"persistence.Persistence","calcKey",0xf23c314c,"persistence.Persistence.calcKey","persistence/Persistence.hx",165,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_69_addMutator,"persistence.Persistence","addMutator",0xab434ebf,"persistence.Persistence.addMutator","persistence/Persistence.hx",69,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_71_addMutator,"persistence.Persistence","addMutator",0xab434ebf,"persistence.Persistence.addMutator","persistence/Persistence.hx",71,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_80_addGetter,"persistence.Persistence","addGetter",0xa800a5ce,"persistence.Persistence.addGetter","persistence/Persistence.hx",80,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_82_addGetter,"persistence.Persistence","addGetter",0xa800a5ce,"persistence.Persistence.addGetter","persistence/Persistence.hx",82,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_85_addGetter,"persistence.Persistence","addGetter",0xa800a5ce,"persistence.Persistence.addGetter","persistence/Persistence.hx",85,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_95_mutate,"persistence.Persistence","mutate",0x1e0a9484,"persistence.Persistence.mutate","persistence/Persistence.hx",95,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_135_get,"persistence.Persistence","get",0x1c3374d8,"persistence.Persistence.get","persistence/Persistence.hx",135,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_190_calcKey,"persistence.Persistence","calcKey",0xf23c314c,"persistence.Persistence.calcKey","persistence/Persistence.hx",190,0x9767c4cf)
 HX_LOCAL_STACK_FRAME(_hx_pos_9b0a59171cb4a4c9_10_boot,"persistence.Persistence","boot",0x8d8c49b0,"persistence.Persistence.boot","persistence/Persistence.hx",10,0x9767c4cf)
 namespace persistence{
 
@@ -57,48 +57,56 @@ HXLINE(  24)			 ::Dynamic updateMapper = null();
 HXLINE(  25)			if ((args->get_length() > 3)) {
 HXLINE(  26)				updateMapper = args->__get(3);
             			}
-HXLINE(  28)			_gthis->addMutator(recordType,operationName,strategyMethod,updateMapper);
-HXLINE(  29)			return true;
+HXLINE(  28)			 ::Dynamic useRecordDataAsParams = null();
+HXLINE(  29)			if ((args->get_length() > 4)) {
+HXLINE(  30)				useRecordDataAsParams = args->__get(4);
+            			}
+HXLINE(  32)			_gthis->addMutator(recordType,operationName,strategyMethod,updateMapper,useRecordDataAsParams);
+HXLINE(  33)			return true;
             		}
             		HX_END_LOCAL_FUNC1(return)
 
             		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_1, ::persistence::Persistence,_gthis) HXARGC(1)
             		 ::Dynamic _hx_run(::cpp::VirtualArray args){
-            			HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_31_new)
-HXLINE(  32)			::String recordType = ( (::String)(args->__get(0)) );
-HXLINE(  33)			::String operationName = ( (::String)(args->__get(1)) );
-HXLINE(  34)			 ::Dynamic strategyMethod = args->__get(2);
-HXLINE(  35)			 ::Dynamic queryMapper = null();
-HXLINE(  36)			if ((args->get_length() > 4)) {
-HXLINE(  37)				queryMapper = args->__get(3);
+            			HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_35_new)
+HXLINE(  36)			::String recordType = ( (::String)(args->__get(0)) );
+HXLINE(  37)			::String operationName = ( (::String)(args->__get(1)) );
+HXLINE(  38)			 ::Dynamic strategyMethod = args->__get(2);
+HXLINE(  39)			 ::Dynamic queryMapper = null();
+HXLINE(  40)			if ((args->get_length() > 4)) {
+HXLINE(  41)				queryMapper = args->__get(3);
             			}
-HXLINE(  39)			 ::Dynamic resultMapper = null();
-HXLINE(  40)			if ((args->get_length() > 5)) {
-HXLINE(  41)				resultMapper = args->__get(4);
+HXLINE(  43)			 ::Dynamic resultMapper = null();
+HXLINE(  44)			if ((args->get_length() > 5)) {
+HXLINE(  45)				resultMapper = args->__get(4);
             			}
-HXLINE(  43)			_gthis->addGetter(recordType,operationName,strategyMethod,queryMapper,resultMapper);
-HXLINE(  44)			return true;
+HXLINE(  47)			 ::Dynamic useQueryValuesAsParams = null();
+HXLINE(  48)			if ((args->get_length() > 6)) {
+HXLINE(  49)				resultMapper = args->__get(5);
+            			}
+HXLINE(  51)			_gthis->addGetter(recordType,operationName,strategyMethod,queryMapper,resultMapper,useQueryValuesAsParams);
+HXLINE(  52)			return true;
             		}
             		HX_END_LOCAL_FUNC1(return)
 
             		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_2, ::persistence::Persistence,_gthis) HXARGC(1)
             		 ::Dynamic _hx_run(::cpp::VirtualArray args){
-            			HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_46_new)
-HXLINE(  47)			::String recordType = ( (::String)(args->__get(0)) );
-HXLINE(  48)			::String operationName = ( (::String)(args->__get(1)) );
-HXLINE(  49)			 ::Dynamic recordData = args->__get(2);
-HXLINE(  50)			_gthis->mutate(recordType,operationName,recordData);
-HXLINE(  51)			return true;
+            			HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_54_new)
+HXLINE(  55)			::String recordType = ( (::String)(args->__get(0)) );
+HXLINE(  56)			::String operationName = ( (::String)(args->__get(1)) );
+HXLINE(  57)			 ::Dynamic recordData = args->__get(2);
+HXLINE(  58)			_gthis->mutate(recordType,operationName,recordData);
+HXLINE(  59)			return true;
             		}
             		HX_END_LOCAL_FUNC1(return)
 
             		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_3, ::persistence::Persistence,_gthis) HXARGC(1)
             		 ::Dynamic _hx_run(::cpp::VirtualArray args){
-            			HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_53_new)
-HXLINE(  54)			::String recordType = ( (::String)(args->__get(0)) );
-HXLINE(  55)			::String operationName = ( (::String)(args->__get(1)) );
-HXLINE(  56)			 ::Dynamic queryValues = args->__get(2);
-HXLINE(  57)			return _gthis->get(recordType,operationName,queryValues);
+            			HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_61_new)
+HXLINE(  62)			::String recordType = ( (::String)(args->__get(0)) );
+HXLINE(  63)			::String operationName = ( (::String)(args->__get(1)) );
+HXLINE(  64)			 ::Dynamic queryValues = args->__get(2);
+HXLINE(  65)			return _gthis->get(recordType,operationName,queryValues);
             		}
             		HX_END_LOCAL_FUNC1(return)
 
@@ -108,9 +116,9 @@ HXLINE(  17)		this->mutators =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
 HXLINE(  18)		this->getters =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
 HXLINE(  19)		this->maglev = bus;
 HXLINE(  20)		this->maglev->_hx_register(HX_("Persistence.AddMutator",b0,4b,5e,d4), ::Dynamic(new _hx_Closure_0(_gthis)));
-HXLINE(  31)		this->maglev->_hx_register(HX_("Persistence.AddGetter",fd,51,1c,b7), ::Dynamic(new _hx_Closure_1(_gthis)));
-HXLINE(  46)		this->maglev->_hx_register(HX_("Persistence.Mutate",f5,04,66,8c), ::Dynamic(new _hx_Closure_2(_gthis)));
-HXLINE(  53)		this->maglev->_hx_register(HX_("Persistence.Get",c7,c3,56,12), ::Dynamic(new _hx_Closure_3(_gthis)));
+HXLINE(  35)		this->maglev->_hx_register(HX_("Persistence.AddGetter",fd,51,1c,b7), ::Dynamic(new _hx_Closure_1(_gthis)));
+HXLINE(  54)		this->maglev->_hx_register(HX_("Persistence.Mutate",f5,04,66,8c), ::Dynamic(new _hx_Closure_2(_gthis)));
+HXLINE(  61)		this->maglev->_hx_register(HX_("Persistence.Get",c7,c3,56,12), ::Dynamic(new _hx_Closure_3(_gthis)));
             	}
 
 Dynamic Persistence_obj::__CreateEmpty() { return new Persistence_obj; }
@@ -128,94 +136,108 @@ bool Persistence_obj::_hx_isInstanceOf(int inClassId) {
 	return inClassId==(int)0x00000001 || inClassId==(int)0x0263bb48;
 }
 
-void Persistence_obj::addMutator(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic updateMapper){
-            	HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_61_addMutator)
-HXLINE(  62)		if (::hx::IsNull( updateMapper )) {
+void Persistence_obj::addMutator(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic updateMapper, ::Dynamic useRecordDataAsParams){
+            	HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_69_addMutator)
+HXLINE(  70)		if (::hx::IsNull( updateMapper )) {
             			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_0) HXARGC(1)
             			 ::Dynamic _hx_run( ::Dynamic v){
-            				HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_63_addMutator)
-HXLINE(  63)				return v;
-            			}
-            			HX_END_LOCAL_FUNC1(return)
-
-HXLINE(  63)			updateMapper =  ::Dynamic(new _hx_Closure_0());
-            		}
-HXLINE(  65)		 ::persistence::_Persistence::Mutator mutator =  ::persistence::_Persistence::Mutator_obj::__alloc( HX_CTX ,recordType,strategyMethod,updateMapper);
-HXLINE(  66)		this->mutators->set(((recordType + HX_(".",2e,00,00,00)) + operationName),mutator);
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC4(Persistence_obj,addMutator,(void))
-
-void Persistence_obj::addGetter(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper){
-            	HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_69_addGetter)
-HXLINE(  70)		if (::hx::IsNull( queryMapper )) {
-            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_0) HXARGC(1)
-            			 ::Dynamic _hx_run( ::Dynamic v){
-            				HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_71_addGetter)
+            				HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_71_addMutator)
 HXLINE(  71)				return v;
             			}
             			HX_END_LOCAL_FUNC1(return)
 
-HXLINE(  71)			queryMapper =  ::Dynamic(new _hx_Closure_0());
+HXLINE(  71)			updateMapper =  ::Dynamic(new _hx_Closure_0());
             		}
-HXLINE(  73)		if (::hx::IsNull( resultMapper )) {
-            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_1) HXARGC(1)
-            			 ::Dynamic _hx_run( ::Dynamic v){
-            				HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_74_addGetter)
-HXLINE(  74)				return v;
-            			}
-            			HX_END_LOCAL_FUNC1(return)
-
-HXLINE(  74)			resultMapper =  ::Dynamic(new _hx_Closure_1());
+HXLINE(  73)		if (::hx::IsNull( useRecordDataAsParams )) {
+HXLINE(  74)			useRecordDataAsParams = false;
             		}
-HXLINE(  76)		 ::persistence::_Persistence::Getter getter =  ::persistence::_Persistence::Getter_obj::__alloc( HX_CTX ,recordType,strategyMethod,queryMapper,resultMapper);
+HXLINE(  76)		 ::persistence::_Persistence::Mutator mutator =  ::persistence::_Persistence::Mutator_obj::__alloc( HX_CTX ,recordType,strategyMethod,updateMapper,( (bool)(useRecordDataAsParams) ));
 HXLINE(  77)		{
-HXLINE(  77)			::Dynamic this1 = this->getters;
-HXDLIN(  77)			( ( ::haxe::ds::StringMap)(this1) )->set(this->calcKey(recordType,operationName),getter);
+HXLINE(  77)			::Dynamic this1 = this->mutators;
+HXDLIN(  77)			( ( ::haxe::ds::StringMap)(this1) )->set(this->calcKey(recordType,operationName),mutator);
             		}
             	}
 
 
-HX_DEFINE_DYNAMIC_FUNC5(Persistence_obj,addGetter,(void))
+HX_DEFINE_DYNAMIC_FUNC5(Persistence_obj,addMutator,(void))
+
+void Persistence_obj::addGetter(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper, ::Dynamic useQueryValuesAsParams){
+            	HX_GC_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_80_addGetter)
+HXLINE(  81)		if (::hx::IsNull( queryMapper )) {
+            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_0) HXARGC(1)
+            			 ::Dynamic _hx_run( ::Dynamic v){
+            				HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_82_addGetter)
+HXLINE(  82)				return v;
+            			}
+            			HX_END_LOCAL_FUNC1(return)
+
+HXLINE(  82)			queryMapper =  ::Dynamic(new _hx_Closure_0());
+            		}
+HXLINE(  84)		if (::hx::IsNull( resultMapper )) {
+            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_1) HXARGC(1)
+            			 ::Dynamic _hx_run( ::Dynamic v){
+            				HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_85_addGetter)
+HXLINE(  85)				return v;
+            			}
+            			HX_END_LOCAL_FUNC1(return)
+
+HXLINE(  85)			resultMapper =  ::Dynamic(new _hx_Closure_1());
+            		}
+HXLINE(  87)		if (::hx::IsNull( useQueryValuesAsParams )) {
+HXLINE(  88)			useQueryValuesAsParams = false;
+            		}
+HXLINE(  90)		 ::persistence::_Persistence::Getter getter =  ::persistence::_Persistence::Getter_obj::__alloc( HX_CTX ,recordType,strategyMethod,queryMapper,resultMapper,( (bool)(useQueryValuesAsParams) ));
+HXLINE(  91)		{
+HXLINE(  91)			::Dynamic this1 = this->getters;
+HXDLIN(  91)			( ( ::haxe::ds::StringMap)(this1) )->set(this->calcKey(recordType,operationName),getter);
+            		}
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC6(Persistence_obj,addGetter,(void))
 
 void Persistence_obj::mutate(::String recordType,::String operationName, ::Dynamic recordData){
-            	HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_81_mutate)
-HXDLIN(  81)		::Dynamic this1 = this->mutators;
-HXDLIN(  81)		if (( ( ::haxe::ds::StringMap)(this1) )->exists(this->calcKey(recordType,operationName))) {
-HXLINE(  82)			::Dynamic this1 = this->mutators;
-HXDLIN(  82)			 ::persistence::_Persistence::Mutator mutator = ( ( ::persistence::_Persistence::Mutator)(( ( ::haxe::ds::StringMap)(this1) )->get(this->calcKey(recordType,operationName))) );
-HXLINE(  84)			 ::Dynamic params = null();
-HXLINE(  85)			if (::Reflect_obj::isFunction(mutator->updateMapper)) {
-HXLINE(  86)				 ::Dynamic updateMapper = mutator->updateMapper;
-HXLINE(  87)				params = updateMapper(recordData);
+            	HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_95_mutate)
+HXDLIN(  95)		::Dynamic this1 = this->mutators;
+HXDLIN(  95)		if (( ( ::haxe::ds::StringMap)(this1) )->exists(this->calcKey(recordType,operationName))) {
+HXLINE(  96)			::Dynamic this1 = this->mutators;
+HXDLIN(  96)			 ::persistence::_Persistence::Mutator mutator = ( ( ::persistence::_Persistence::Mutator)(( ( ::haxe::ds::StringMap)(this1) )->get(this->calcKey(recordType,operationName))) );
+HXLINE(  98)			 ::Dynamic params = null();
+HXLINE(  99)			if (::Reflect_obj::isFunction(mutator->updateMapper)) {
+HXLINE( 100)				 ::Dynamic updateMapper = mutator->updateMapper;
+HXLINE( 101)				params = updateMapper(recordData);
             			}
             			else {
-HXLINE(  89)				if (::Std_obj::isOfType(mutator->updateMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
-HXLINE(  90)					::String updateMapper = ( (::String)(mutator->updateMapper) );
-HXLINE(  91)					params = this->maglev->call(updateMapper,( (::cpp::VirtualArray)(recordData) ));
+HXLINE( 103)				if (::Std_obj::isOfType(mutator->updateMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
+HXLINE( 104)					::String updateMapper = ( (::String)(mutator->updateMapper) );
+HXLINE( 106)					params = this->maglev->call(updateMapper,::cpp::VirtualArray_obj::__new(1)->init(0,recordData));
             				}
             				else {
-HXLINE(  94)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("updateMapper must be a string or function",e1,0d,80,87)));
+HXLINE( 109)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("updateMapper must be a string or function",e1,0d,80,87)));
             				}
             			}
-HXLINE(  97)			 ::Dynamic raw_result = null();
-HXLINE(  98)			if (::Reflect_obj::isFunction(mutator->strategyMethod)) {
-HXLINE(  99)				 ::Dynamic strategyMethod = mutator->strategyMethod;
-HXLINE( 100)				raw_result = strategyMethod(params);
+HXLINE( 112)			 ::Dynamic raw_result = null();
+HXLINE( 113)			if (::Reflect_obj::isFunction(mutator->strategyMethod)) {
+HXLINE( 114)				 ::Dynamic strategyMethod = mutator->strategyMethod;
+HXLINE( 115)				raw_result = strategyMethod(params);
             			}
             			else {
-HXLINE( 102)				if (::Std_obj::isOfType(mutator->strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
-HXLINE( 103)					::String strategyMethod = ( (::String)(mutator->strategyMethod) );
-HXLINE( 104)					raw_result = this->maglev->call(strategyMethod,( (::cpp::VirtualArray)(params) ));
+HXLINE( 117)				if (::Std_obj::isOfType(mutator->strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
+HXLINE( 118)					::String strategyMethod = ( (::String)(mutator->strategyMethod) );
+HXLINE( 119)					if (mutator->useRecordDataAsParams) {
+HXLINE( 120)						raw_result = this->maglev->call(strategyMethod,( (::cpp::VirtualArray)(params) ));
+            					}
+            					else {
+HXLINE( 122)						raw_result = this->maglev->call(strategyMethod,::cpp::VirtualArray_obj::__new(1)->init(0,params));
+            					}
             				}
             				else {
-HXLINE( 107)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
+HXLINE( 126)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
             				}
             			}
             		}
             		else {
-HXLINE( 111)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("the specified mutator has not been added",fc,3b,68,3f)));
+HXLINE( 130)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("the specified mutator has not been added",fc,3b,68,3f)));
             		}
             	}
 
@@ -223,67 +245,72 @@ HXLINE( 111)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("the specifie
 HX_DEFINE_DYNAMIC_FUNC3(Persistence_obj,mutate,(void))
 
  ::Dynamic Persistence_obj::get(::String recordType,::String operationName, ::Dynamic queryValues){
-            	HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_116_get)
-HXDLIN( 116)		::Dynamic this1 = this->getters;
-HXDLIN( 116)		if (( ( ::haxe::ds::StringMap)(this1) )->exists(this->calcKey(recordType,operationName))) {
-HXLINE( 117)			::Dynamic this1 = this->getters;
-HXDLIN( 117)			 ::persistence::_Persistence::Getter getter = ( ( ::persistence::_Persistence::Getter)(( ( ::haxe::ds::StringMap)(this1) )->get(this->calcKey(recordType,operationName))) );
-HXLINE( 119)			 ::Dynamic query = null();
-HXLINE( 120)			if (::Reflect_obj::isFunction(getter->queryMapper)) {
-HXLINE( 121)				 ::Dynamic queryMapper = getter->queryMapper;
-HXLINE( 122)				query = queryMapper(queryValues);
+            	HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_135_get)
+HXDLIN( 135)		::Dynamic this1 = this->getters;
+HXDLIN( 135)		if (( ( ::haxe::ds::StringMap)(this1) )->exists(this->calcKey(recordType,operationName))) {
+HXLINE( 136)			::Dynamic this1 = this->getters;
+HXDLIN( 136)			 ::persistence::_Persistence::Getter getter = ( ( ::persistence::_Persistence::Getter)(( ( ::haxe::ds::StringMap)(this1) )->get(this->calcKey(recordType,operationName))) );
+HXLINE( 138)			 ::Dynamic query = null();
+HXLINE( 139)			if (::Reflect_obj::isFunction(getter->queryMapper)) {
+HXLINE( 140)				 ::Dynamic queryMapper = getter->queryMapper;
+HXLINE( 141)				query = queryMapper(queryValues);
             			}
             			else {
-HXLINE( 124)				if (::Std_obj::isOfType(getter->queryMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
-HXLINE( 125)					::String queryMapper = ( (::String)(getter->queryMapper) );
-HXLINE( 126)					query = this->maglev->call(queryMapper,( (::cpp::VirtualArray)(queryValues) ));
+HXLINE( 143)				if (::Std_obj::isOfType(getter->queryMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
+HXLINE( 144)					::String queryMapper = ( (::String)(getter->queryMapper) );
+HXLINE( 146)					query = this->maglev->call(queryMapper,::cpp::VirtualArray_obj::__new(1)->init(0,queryValues));
             				}
             				else {
-HXLINE( 129)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("queryMapper must be a string or function",42,16,bc,ef)));
+HXLINE( 149)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("queryMapper must be a string or function",42,16,bc,ef)));
             				}
             			}
-HXLINE( 132)			 ::Dynamic raw_result = null();
-HXLINE( 133)			if (::Reflect_obj::isFunction(getter->strategyMethod)) {
-HXLINE( 134)				 ::Dynamic strategyMethod = getter->strategyMethod;
-HXLINE( 135)				raw_result = strategyMethod(query);
+HXLINE( 152)			 ::Dynamic raw_result = null();
+HXLINE( 153)			if (::Reflect_obj::isFunction(getter->strategyMethod)) {
+HXLINE( 154)				 ::Dynamic strategyMethod = getter->strategyMethod;
+HXLINE( 155)				raw_result = strategyMethod(query);
             			}
             			else {
-HXLINE( 137)				if (::Std_obj::isOfType(getter->strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
-HXLINE( 138)					::String strategyMethod = ( (::String)(getter->strategyMethod) );
-HXLINE( 139)					raw_result = this->maglev->call(( (::String)(getter->strategyMethod) ),( (::cpp::VirtualArray)(query) ));
+HXLINE( 157)				if (::Std_obj::isOfType(getter->strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
+HXLINE( 158)					::String strategyMethod = ( (::String)(getter->strategyMethod) );
+HXLINE( 159)					if (getter->useQueryValuesAsParams) {
+HXLINE( 160)						raw_result = this->maglev->call(( (::String)(getter->strategyMethod) ),( (::cpp::VirtualArray)(query) ));
+            					}
+            					else {
+HXLINE( 162)						raw_result = this->maglev->call(( (::String)(getter->strategyMethod) ),::cpp::VirtualArray_obj::__new(1)->init(0,query));
+            					}
             				}
             				else {
-HXLINE( 142)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
+HXLINE( 166)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
             				}
             			}
-HXLINE( 145)			 ::Dynamic result = null();
-HXLINE( 146)			if (::Reflect_obj::isFunction(getter->resultMapper)) {
-HXLINE( 147)				 ::Dynamic resultMapper = getter->resultMapper;
-HXLINE( 148)				result = resultMapper(raw_result);
+HXLINE( 169)			 ::Dynamic result = null();
+HXLINE( 170)			if (::Reflect_obj::isFunction(getter->resultMapper)) {
+HXLINE( 171)				 ::Dynamic resultMapper = getter->resultMapper;
+HXLINE( 172)				result = resultMapper(raw_result);
             			}
             			else {
-HXLINE( 150)				if (::Std_obj::isOfType(getter->resultMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
-HXLINE( 151)					::String resultMapper = ( (::String)(getter->resultMapper) );
-HXLINE( 152)					result = this->maglev->call(resultMapper,( (::cpp::VirtualArray)(raw_result) ));
+HXLINE( 174)				if (::Std_obj::isOfType(getter->resultMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
+HXLINE( 175)					::String resultMapper = ( (::String)(getter->resultMapper) );
+HXLINE( 177)					result = this->maglev->call(resultMapper,::cpp::VirtualArray_obj::__new(1)->init(0,raw_result));
             				}
             				else {
-HXLINE( 155)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("resultMapper must be a string or function",8d,d7,71,1d)));
+HXLINE( 180)					HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("resultMapper must be a string or function",8d,d7,71,1d)));
             				}
             			}
-HXLINE( 157)			return result;
+HXLINE( 182)			return result;
             		}
             		else {
-HXLINE( 160)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("the specified getter has not been added",55,b4,c1,d8)));
+HXLINE( 185)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("the specified getter has not been added",55,b4,c1,d8)));
             		}
-HXLINE( 116)		return null();
+HXLINE( 135)		return null();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC3(Persistence_obj,get,return )
 
 ::String Persistence_obj::calcKey(::String recordType,::String operationName){
-            	HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_165_calcKey)
-HXDLIN( 165)		return ((recordType + HX_(".",2e,00,00,00)) + operationName);
+            	HX_STACKFRAME(&_hx_pos_9b0a59171cb4a4c9_190_calcKey)
+HXDLIN( 190)		return ((recordType + HX_(".",2e,00,00,00)) + operationName);
             	}
 
 
