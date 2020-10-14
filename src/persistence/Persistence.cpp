@@ -73,16 +73,16 @@ HXLINE(  36)			::String recordType = ( (::String)(args->__get(0)) );
 HXLINE(  37)			::String operationName = ( (::String)(args->__get(1)) );
 HXLINE(  38)			 ::Dynamic strategyMethod = args->__get(2);
 HXLINE(  39)			 ::Dynamic queryMapper = null();
-HXLINE(  40)			if ((args->get_length() > 4)) {
+HXLINE(  40)			if ((args->get_length() >= 4)) {
 HXLINE(  41)				queryMapper = args->__get(3);
             			}
 HXLINE(  43)			 ::Dynamic resultMapper = null();
-HXLINE(  44)			if ((args->get_length() > 5)) {
+HXLINE(  44)			if ((args->get_length() >= 5)) {
 HXLINE(  45)				resultMapper = args->__get(4);
             			}
 HXLINE(  47)			 ::Dynamic useQueryValuesAsParams = null();
-HXLINE(  48)			if ((args->get_length() > 6)) {
-HXLINE(  49)				resultMapper = args->__get(5);
+HXLINE(  48)			if ((args->get_length() >= 6)) {
+HXLINE(  49)				useQueryValuesAsParams = args->__get(5);
             			}
 HXLINE(  51)			_gthis->addGetter(recordType,operationName,strategyMethod,queryMapper,resultMapper,useQueryValuesAsParams);
 HXLINE(  52)			return true;
