@@ -10,6 +10,10 @@
 #define INCLUDED_16d41c6fc5b8bf5d
 #include "maglev/MagLev.h"
 #endif
+#ifndef INCLUDED_869a921fcf5bba54
+#define INCLUDED_869a921fcf5bba54
+#include "maglev/MagLevAny.h"
+#endif
 HX_DECLARE_CLASS1(haxe,IMap)
 HX_DECLARE_CLASS2(haxe,ds,StringMap)
 HX_DECLARE_CLASS1(persistence,Persistence)
@@ -68,6 +72,12 @@ class HXCPP_CLASS_ATTRIBUTES Persistence_obj : public ::hx::Object
 
 		::String calcKey(::String recordType,::String operationName);
 		::Dynamic calcKey_dyn();
+
+		 ::Dynamic convertToHaxe( ::maglev::MagLevAny x);
+		::Dynamic convertToHaxe_dyn();
+
+		 ::maglev::MagLevAny convertToMagLev( ::Dynamic x);
+		::Dynamic convertToMagLev_dyn();
 
 };
 

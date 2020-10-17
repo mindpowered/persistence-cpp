@@ -20,6 +20,7 @@
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/IMap.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/maglev/MagLevType.h"/>
    <depend name="include/persistence/Persistence.h"/>
    <depend name="include/persistence/_Persistence/Getter.h"/>
    <depend name="include/persistence/_Persistence/Mutator.h"/>
