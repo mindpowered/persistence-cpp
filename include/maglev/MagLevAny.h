@@ -8,7 +8,6 @@
 
 HX_DECLARE_CLASS1(maglev,MagLevAny)
 HX_DECLARE_CLASS1(maglev,MagLevString)
-HX_DECLARE_CLASS1(maglev,MagLevType)
 
 namespace maglev{
 
@@ -44,7 +43,7 @@ class HXCPP_CLASS_ATTRIBUTES MagLevAny_obj : public ::hx::Object
 		virtual  ::maglev::MagLevString toJson();
 		::Dynamic toJson_dyn();
 
-		virtual  ::maglev::MagLevType getType();
+		virtual int getType();
 		::Dynamic getType_dyn();
 
 		virtual bool isEqual( ::maglev::MagLevAny o);

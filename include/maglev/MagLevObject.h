@@ -15,7 +15,6 @@ HX_DECLARE_CLASS1(maglev,MagLevAny)
 HX_DECLARE_CLASS1(maglev,MagLevArray)
 HX_DECLARE_CLASS1(maglev,MagLevObject)
 HX_DECLARE_CLASS1(maglev,MagLevString)
-HX_DECLARE_CLASS1(maglev,MagLevType)
 
 namespace maglev{
 
@@ -78,7 +77,7 @@ class HXCPP_CLASS_ATTRIBUTES MagLevObject_obj : public  ::maglev::MagLevAny_obj
 		 ::haxe::ds::StringMap getStringMap();
 		::Dynamic getStringMap_dyn();
 
-		 ::maglev::MagLevType getType();
+		int getType();
 
 		bool isEqual( ::maglev::MagLevAny other);
 

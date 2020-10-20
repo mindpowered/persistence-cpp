@@ -10,7 +10,6 @@ HX_DECLARE_CLASS1(maglev,MagLevAny)
 HX_DECLARE_CLASS1(maglev,MagLevError)
 HX_DECLARE_CLASS1(maglev,MagLevResult)
 HX_DECLARE_CLASS1(maglev,MagLevString)
-HX_DECLARE_CLASS1(maglev,MagLevType)
 
 namespace maglev{
 
@@ -71,7 +70,7 @@ class HXCPP_CLASS_ATTRIBUTES MagLevResult_obj : public ::hx::Object
 		void setError( ::maglev::MagLevError err);
 		::Dynamic setError_dyn();
 
-		 ::maglev::MagLevType getType();
+		int getType();
 		::Dynamic getType_dyn();
 
 		bool isEqual( ::maglev::MagLevResult other);

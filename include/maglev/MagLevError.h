@@ -10,7 +10,6 @@ HX_DECLARE_CLASS1(maglev,MagLevAny)
 HX_DECLARE_CLASS1(maglev,MagLevError)
 HX_DECLARE_CLASS1(maglev,MagLevNumber)
 HX_DECLARE_CLASS1(maglev,MagLevString)
-HX_DECLARE_CLASS1(maglev,MagLevType)
 
 namespace maglev{
 
@@ -39,6 +38,7 @@ class HXCPP_CLASS_ATTRIBUTES MagLevError_obj : public ::hx::Object
 
 		HX_DO_RTTI_ALL;
 		::hx::Val __Field(const ::String &inString, ::hx::PropertyAccess inCallProp);
+		static bool __GetStatic(const ::String &inString, Dynamic &outValue, ::hx::PropertyAccess inCallProp);
 		::hx::Val __SetField(const ::String &inString,const ::hx::Val &inValue, ::hx::PropertyAccess inCallProp);
 		void __GetFields(Array< ::String> &outFields);
 		static void __register();
@@ -47,12 +47,12 @@ class HXCPP_CLASS_ATTRIBUTES MagLevError_obj : public ::hx::Object
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("MagLevError",3e,78,a4,15); }
 
+		static  ::maglev::MagLevError create(int code,::String message, ::maglev::MagLevAny data);
+		static ::Dynamic create_dyn();
+
 		 ::maglev::MagLevNumber code;
 		 ::maglev::MagLevString message;
 		 ::maglev::MagLevAny data;
-		 ::maglev::MagLevError create(int code,::String message, ::maglev::MagLevAny data);
-		::Dynamic create_dyn();
-
 		int getCode();
 		::Dynamic getCode_dyn();
 
@@ -62,7 +62,7 @@ class HXCPP_CLASS_ATTRIBUTES MagLevError_obj : public ::hx::Object
 		 ::maglev::MagLevAny getData();
 		::Dynamic getData_dyn();
 
-		 ::maglev::MagLevType getType();
+		int getType();
 		::Dynamic getType_dyn();
 
 		bool isEqual( ::maglev::MagLevError other);
