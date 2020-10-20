@@ -9,6 +9,7 @@
 #ifndef INCLUDED_maglev_MagLevAny
 #include <maglev/MagLevAny.h>
 #endif
+HX_DECLARE_STACK_FRAME(_hx_pos_fc3d282075c9cb4d_495_new)
 HX_DECLARE_CLASS1(maglev,MagLevAny)
 HX_DECLARE_CLASS1(maglev,MagLevString)
 
@@ -30,8 +31,25 @@ class HXCPP_CLASS_ATTRIBUTES MagLevString_obj : public  ::maglev::MagLevAny_obj
 			{ return ::hx::Object::operator new(inSize,inContainer,inName); }
 		inline void *operator new(size_t inSize, int extra)
 			{ return ::hx::Object::operator new(inSize+extra,true,"maglev.MagLevString"); }
-		static ::hx::ObjectPtr< MagLevString_obj > __new(::String value);
-		static ::hx::ObjectPtr< MagLevString_obj > __alloc(::hx::Ctx *_hx_ctx,::String value);
+
+		inline static ::hx::ObjectPtr< MagLevString_obj > __new(::String value) {
+			::hx::ObjectPtr< MagLevString_obj > __this = new MagLevString_obj();
+			__this->__construct(value);
+			return __this;
+		}
+
+		inline static ::hx::ObjectPtr< MagLevString_obj > __alloc(::hx::Ctx *_hx_ctx,::String value) {
+			MagLevString_obj *__this = (MagLevString_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(MagLevString_obj), true, "maglev.MagLevString"));
+			*(void **)__this = MagLevString_obj::_hx_vtable;
+{
+            	HX_STACKFRAME(&_hx_pos_fc3d282075c9cb4d_495_new)
+HXLINE( 496)		( ( ::maglev::MagLevString)(__this) )->value = value;
+HXLINE( 497)		__this->super::__construct();
+            	}
+		
+			return __this;
+		}
+
 		static void * _hx_vtable;
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(::hx::DynamicArray inArgs);
@@ -50,6 +68,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLevString_obj : public  ::maglev::MagLevAny_obj
 
 		static  ::maglev::MagLevString fromString(::String value);
 		static ::Dynamic fromString_dyn();
+
+		static int getStaticType();
+		static ::Dynamic getStaticType_dyn();
 
 		::String value;
 		::String getString();

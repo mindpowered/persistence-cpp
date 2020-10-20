@@ -52,6 +52,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLevArray_obj : public  ::maglev::MagLevAny_obj
 		static  ::maglev::MagLevArray create();
 		static ::Dynamic create_dyn();
 
+		static int getStaticType();
+		static ::Dynamic getStaticType_dyn();
+
 		::Array< ::Dynamic> values;
 		int size();
 		::Dynamic size_dyn();

@@ -50,6 +50,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLevBoolean_obj : public  ::maglev::MagLevAny_obj
 		static  ::maglev::MagLevBoolean fromBool(bool value);
 		static ::Dynamic fromBool_dyn();
 
+		static int getStaticType();
+		static ::Dynamic getStaticType_dyn();
+
 		bool value;
 		bool getBool();
 		::Dynamic getBool_dyn();

@@ -50,6 +50,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLevError_obj : public ::hx::Object
 		static  ::maglev::MagLevError create(int code,::String message, ::maglev::MagLevAny data);
 		static ::Dynamic create_dyn();
 
+		static int getStaticType();
+		static ::Dynamic getStaticType_dyn();
+
 		 ::maglev::MagLevNumber code;
 		 ::maglev::MagLevString message;
 		 ::maglev::MagLevAny data;

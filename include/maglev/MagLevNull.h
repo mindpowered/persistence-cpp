@@ -48,6 +48,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLevNull_obj : public  ::maglev::MagLevAny_obj
 		static  ::maglev::MagLevNull create();
 		static ::Dynamic create_dyn();
 
+		static int getStaticType();
+		static ::Dynamic getStaticType_dyn();
+
 		static  ::maglev::MagLevAny wrap( ::maglev::MagLevAny o);
 		static ::Dynamic wrap_dyn();
 

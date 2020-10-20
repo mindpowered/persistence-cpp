@@ -55,6 +55,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLevObject_obj : public  ::maglev::MagLevAny_obj
 		static  ::maglev::MagLevObject create();
 		static ::Dynamic create_dyn();
 
+		static int getStaticType();
+		static ::Dynamic getStaticType_dyn();
+
 		 ::haxe::ds::StringMap values;
 		void clear();
 		::Dynamic clear_dyn();

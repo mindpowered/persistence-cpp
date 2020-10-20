@@ -57,6 +57,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLevFunction_obj : public  ::maglev::MagLevAny_ob
 		static  ::maglev::MagLevFunction fromNamedFunction( ::Dynamic value,::String name);
 		static ::Dynamic fromNamedFunction_dyn();
 
+		static int getStaticType();
+		static ::Dynamic getStaticType_dyn();
+
 		::String name;
 		 ::Dynamic value;
 		Dynamic value_dyn() { return value;}

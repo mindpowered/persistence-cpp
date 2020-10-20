@@ -53,6 +53,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLevResult_obj : public ::hx::Object
 		static  ::maglev::MagLevResult fromError( ::maglev::MagLevError err);
 		static ::Dynamic fromError_dyn();
 
+		static int getStaticType();
+		static ::Dynamic getStaticType_dyn();
+
 		 ::maglev::MagLevAny result;
 		 ::maglev::MagLevError error;
 		bool isError();

@@ -53,6 +53,9 @@ class HXCPP_CLASS_ATTRIBUTES MagLevNumber_obj : public  ::maglev::MagLevAny_obj
 		static  ::maglev::MagLevNumber fromInt(int value);
 		static ::Dynamic fromInt_dyn();
 
+		static int getStaticType();
+		static ::Dynamic getStaticType_dyn();
+
 		Float value;
 		Float getFloat();
 		::Dynamic getFloat_dyn();
