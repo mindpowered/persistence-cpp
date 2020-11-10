@@ -64,7 +64,7 @@ class HXCPP_CLASS_ATTRIBUTES Persistence_obj : public ::hx::Object
 		void addGetter(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper, ::Dynamic useQueryValuesAsParams);
 		::Dynamic addGetter_dyn();
 
-		void mutate(::String recordType,::String operationName, ::Dynamic recordData);
+		 ::Dynamic mutate(::String recordType,::String operationName, ::Dynamic recordData);
 		::Dynamic mutate_dyn();
 
 		 ::Dynamic get(::String recordType,::String operationName, ::Dynamic queryValues);

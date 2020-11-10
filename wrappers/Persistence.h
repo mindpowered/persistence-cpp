@@ -28,7 +28,7 @@ public:
 	 * @param useRecordDataAsParams if set to true, the recordData will be passed as the arguments to strategyMethod, rather than as the first argument
 	*/
 	void AddMutator(std::string recordType, std::string operationName, ::maglev::CppAny strategyMethod, ::maglev::CppAny updateMapper, bool useRecordDataAsParams) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("persistence");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0.setStdString(recordType);
@@ -58,7 +58,7 @@ public:
 	 * @param useQueryValuesAsParams if set to true, the queryValues will be passed as the arguments to strategyMethod, rather than as the first argument
 	*/
 	void AddGetter(std::string recordType, std::string operationName, ::maglev::CppAny strategyMethod, ::maglev::CppAny queryMapper, ::maglev::CppAny resultMapper, bool useQueryValuesAsParams) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("persistence");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0.setStdString(recordType);
@@ -88,7 +88,7 @@ public:
 	 * @param recordData data being updated or saved by passing through updateMapper and then strategyMethod
 	*/
 	void Mutate(std::string recordType, std::string operationName, ::maglev::CppAny recordData) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("persistence");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0.setStdString(recordType);
@@ -110,7 +110,7 @@ public:
 	 * @return {mixed} result from the getter after being passed through resultMapper
 	*/
 	::maglev::CppAny Get(std::string recordType, std::string operationName, ::maglev::CppAny queryValues) {
-		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("default");
+		::maglev::MagLevCpp bus = ::maglev::MagLevCpp::getInstance("persistence");
 		std::vector<::maglev::CppAny> myargs;
 		::maglev::CppAny param0;
 		param0.setStdString(recordType);

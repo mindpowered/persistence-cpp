@@ -14,37 +14,37 @@
 #include <persistence/_Persistence/Mutator.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_9dae053d9ec60bd7_316_new,"persistence._Persistence.Mutator","new",0xb5d6dd75,"persistence._Persistence.Mutator.new","persistence/Persistence.hx",316,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_9dae053d9ec60bd7_310_boot,"persistence._Persistence.Mutator","boot",0x5e43e97d,"persistence._Persistence.Mutator.boot","persistence/Persistence.hx",310,0x9767c4cf)
+HX_DEFINE_STACK_FRAME(_hx_pos_9dae053d9ec60bd7_320_new,"persistence._Persistence.Mutator","new",0xb5d6dd75,"persistence._Persistence.Mutator.new","persistence/Persistence.hx",320,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_9dae053d9ec60bd7_314_boot,"persistence._Persistence.Mutator","boot",0x5e43e97d,"persistence._Persistence.Mutator.boot","persistence/Persistence.hx",314,0x9767c4cf)
 namespace persistence{
 namespace _Persistence{
 
 void Mutator_obj::__construct(::String recordType, ::Dynamic strategyMethod, ::Dynamic updateMapper,bool useRecordDataAsParams){
-            	HX_STACKFRAME(&_hx_pos_9dae053d9ec60bd7_316_new)
-HXLINE( 317)		bool _hx_tmp;
-HXDLIN( 317)		if (!(::Std_obj::isOfType(strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
-HXLINE( 317)			_hx_tmp = !(::Reflect_obj::isFunction(strategyMethod));
+            	HX_STACKFRAME(&_hx_pos_9dae053d9ec60bd7_320_new)
+HXLINE( 321)		bool _hx_tmp;
+HXDLIN( 321)		if (!(::Std_obj::isOfType(strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
+HXLINE( 321)			_hx_tmp = !(::Reflect_obj::isFunction(strategyMethod));
             		}
             		else {
-HXLINE( 317)			_hx_tmp = false;
+HXLINE( 321)			_hx_tmp = false;
             		}
-HXDLIN( 317)		if (_hx_tmp) {
-HXLINE( 318)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
+HXDLIN( 321)		if (_hx_tmp) {
+HXLINE( 322)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
             		}
-HXLINE( 320)		bool _hx_tmp1;
-HXDLIN( 320)		if (!(::Std_obj::isOfType(updateMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
-HXLINE( 320)			_hx_tmp1 = !(::Reflect_obj::isFunction(updateMapper));
+HXLINE( 324)		bool _hx_tmp1;
+HXDLIN( 324)		if (!(::Std_obj::isOfType(updateMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
+HXLINE( 324)			_hx_tmp1 = !(::Reflect_obj::isFunction(updateMapper));
             		}
             		else {
-HXLINE( 320)			_hx_tmp1 = false;
+HXLINE( 324)			_hx_tmp1 = false;
             		}
-HXDLIN( 320)		if (_hx_tmp1) {
-HXLINE( 321)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("updateMapper must be a string or function",e1,0d,80,87)));
+HXDLIN( 324)		if (_hx_tmp1) {
+HXLINE( 325)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("updateMapper must be a string or function",e1,0d,80,87)));
             		}
-HXLINE( 323)		this->recordType = recordType;
-HXLINE( 324)		this->strategyMethod = strategyMethod;
-HXLINE( 325)		this->updateMapper = updateMapper;
-HXLINE( 326)		this->useRecordDataAsParams = useRecordDataAsParams;
+HXLINE( 327)		this->recordType = recordType;
+HXLINE( 328)		this->strategyMethod = strategyMethod;
+HXLINE( 329)		this->updateMapper = updateMapper;
+HXLINE( 330)		this->useRecordDataAsParams = useRecordDataAsParams;
             	}
 
 Dynamic Mutator_obj::__CreateEmpty() { return new Mutator_obj; }
@@ -189,8 +189,8 @@ void Mutator_obj::__register()
 void Mutator_obj::__boot()
 {
 {
-            	HX_STACKFRAME(&_hx_pos_9dae053d9ec60bd7_310_boot)
-HXDLIN( 310)		__mClass->__meta__ =  ::Dynamic(::hx::Anon_obj::Create(1)
+            	HX_STACKFRAME(&_hx_pos_9dae053d9ec60bd7_314_boot)
+HXDLIN( 314)		__mClass->__meta__ =  ::Dynamic(::hx::Anon_obj::Create(1)
             			->setFixed(0,HX_("obj",f7,8f,54,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("SuppressWarnings",0c,d3,d2,00),::cpp::VirtualArray_obj::__new(1)->init(0,HX_("checkstyle:FieldDocComment",70,56,1b,20))))));
             	}
