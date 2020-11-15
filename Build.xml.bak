@@ -20,9 +20,18 @@
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/IMap.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/persistence/MagLevConverter.h"/>
    <depend name="include/persistence/Persistence.h"/>
    <depend name="include/persistence/_Persistence/Getter.h"/>
    <depend name="include/persistence/_Persistence/Mutator.h"/>
+  </file>
+  <file name="src/persistence/MagLevConverter.cpp" >
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/persistence/MagLevConverter.h"/>
   </file>
   <file name="src/haxe/iterators/MapKeyValueIterator.cpp" >
    <depend name="include/haxe/IMap.h"/>

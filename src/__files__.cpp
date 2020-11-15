@@ -27,6 +27,7 @@ const char *__hxcpp_all_files[] = {
 "/opt/haxe/std/haxe/iterators/ArrayKeyValueIterator.hx",
 "/opt/haxe/std/haxe/iterators/HashMapKeyValueIterator.hx",
 "/opt/haxe/std/haxe/iterators/MapKeyValueIterator.hx",
+"persistence/MagLevConverter.hx",
 "persistence/Persistence.hx",
 #endif
  0 };
@@ -56,6 +57,7 @@ const char *__hxcpp_all_files_fullpath[] = {
 "/opt/haxe/std/haxe/iterators/ArrayKeyValueIterator.hx",
 "/opt/haxe/std/haxe/iterators/HashMapKeyValueIterator.hx",
 "/opt/haxe/std/haxe/iterators/MapKeyValueIterator.hx",
+"/my-component/src/persistence/MagLevConverter.hx",
 "/my-component/src/persistence/Persistence.hx",
 #endif
  0 };
@@ -87,6 +89,7 @@ const char *__hxcpp_all_classes[] = {
 "haxe.iterators.ArrayKeyValueIterator",
 "haxe.iterators.HashMapKeyValueIterator",
 "haxe.iterators.MapKeyValueIterator",
+"persistence.MagLevConverter",
 "persistence.Persistence",
 "persistence._Persistence.Mutator",
 "persistence._Persistence.Getter",

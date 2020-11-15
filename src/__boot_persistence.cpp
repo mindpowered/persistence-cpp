@@ -16,6 +16,9 @@
 #ifndef INCLUDED_persistence_Persistence
 #include <persistence/Persistence.h>
 #endif
+#ifndef INCLUDED_persistence_MagLevConverter
+#include <persistence/MagLevConverter.h>
+#endif
 #ifndef INCLUDED_haxe_iterators_MapKeyValueIterator
 #include <haxe/iterators/MapKeyValueIterator.h>
 #endif
@@ -103,6 +106,7 @@ void __boot_persistence()
 ::persistence::_Persistence::Getter_obj::__register();
 ::persistence::_Persistence::Mutator_obj::__register();
 ::persistence::Persistence_obj::__register();
+::persistence::MagLevConverter_obj::__register();
 ::haxe::iterators::MapKeyValueIterator_obj::__register();
 ::haxe::iterators::HashMapKeyValueIterator_obj::__register();
 ::haxe::iterators::ArrayKeyValueIterator_obj::__register();

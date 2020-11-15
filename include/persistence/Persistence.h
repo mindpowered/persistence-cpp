@@ -17,6 +17,8 @@
 HX_DECLARE_CLASS1(haxe,IMap)
 HX_DECLARE_CLASS2(haxe,ds,StringMap)
 HX_DECLARE_CLASS1(persistence,Persistence)
+HX_DECLARE_CLASS2(persistence,_Persistence,Getter)
+HX_DECLARE_CLASS2(persistence,_Persistence,Mutator)
 
 namespace persistence{
 
@@ -64,10 +66,10 @@ class HXCPP_CLASS_ATTRIBUTES Persistence_obj : public ::hx::Object
 		void addGetter(::String recordType,::String operationName, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper, ::Dynamic useQueryValuesAsParams);
 		::Dynamic addGetter_dyn();
 
-		 ::Dynamic mutate(::String recordType,::String operationName, ::Dynamic recordData);
+		void mutate(::String recordType,::String operationName, ::Dynamic recordData, ::Dynamic callback);
 		::Dynamic mutate_dyn();
 
-		 ::Dynamic get(::String recordType,::String operationName, ::Dynamic queryValues);
+		void get(::String recordType,::String operationName, ::Dynamic queryValues, ::Dynamic callback);
 		::Dynamic get_dyn();
 
 		::String calcKey(::String recordType,::String operationName);
@@ -78,6 +80,21 @@ class HXCPP_CLASS_ATTRIBUTES Persistence_obj : public ::hx::Object
 
 		 ::maglev::MagLevAny convertToMagLev( ::Dynamic x);
 		::Dynamic convertToMagLev_dyn();
+
+		void mapUpdate( ::persistence::_Persistence::Mutator mutator, ::Dynamic recordData, ::Dynamic callback);
+		::Dynamic mapUpdate_dyn();
+
+		void update( ::persistence::_Persistence::Mutator mutator, ::Dynamic recordData, ::Dynamic callback);
+		::Dynamic update_dyn();
+
+		void mapQuery( ::persistence::_Persistence::Getter getter, ::Dynamic queryValues, ::Dynamic callback);
+		::Dynamic mapQuery_dyn();
+
+		void query( ::persistence::_Persistence::Getter getter, ::Dynamic queryValues, ::Dynamic callback);
+		::Dynamic query_dyn();
+
+		void mapResults( ::persistence::_Persistence::Getter getter, ::Dynamic queryResults, ::Dynamic callback);
+		::Dynamic mapResults_dyn();
 
 };
 
