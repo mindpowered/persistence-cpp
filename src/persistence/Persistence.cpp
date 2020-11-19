@@ -519,7 +519,7 @@ HXLINE( 223)		 ::Dynamic raw_result = null();
 HXLINE( 224)		if (::Reflect_obj::isFunction(getter->strategyMethod)) {
 HXLINE( 225)			 ::Dynamic strategyMethod = getter->strategyMethod;
 HXLINE( 226)			 ::Dynamic callback1 = callback;
-HXDLIN( 226)			callback1(strategyMethod(this->query_dyn()));
+HXDLIN( 226)			callback1(strategyMethod(queryValues));
             		}
             		else {
 HXLINE( 228)			if (::Std_obj::isOfType(getter->strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
