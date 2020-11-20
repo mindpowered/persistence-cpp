@@ -14,48 +14,48 @@
 #include <persistence/_Persistence/Getter.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_c272a059e327b7a8_308_new,"persistence._Persistence.Getter","new",0x0c4617fc,"persistence._Persistence.Getter.new","persistence/Persistence.hx",308,0x9767c4cf)
-HX_LOCAL_STACK_FRAME(_hx_pos_c272a059e327b7a8_301_boot,"persistence._Persistence.Getter","boot",0xa927e516,"persistence._Persistence.Getter.boot","persistence/Persistence.hx",301,0x9767c4cf)
+HX_DEFINE_STACK_FRAME(_hx_pos_c272a059e327b7a8_318_new,"persistence._Persistence.Getter","new",0x0c4617fc,"persistence._Persistence.Getter.new","persistence/Persistence.hx",318,0x9767c4cf)
+HX_LOCAL_STACK_FRAME(_hx_pos_c272a059e327b7a8_311_boot,"persistence._Persistence.Getter","boot",0xa927e516,"persistence._Persistence.Getter.boot","persistence/Persistence.hx",311,0x9767c4cf)
 namespace persistence{
 namespace _Persistence{
 
 void Getter_obj::__construct(::String recordType, ::Dynamic strategyMethod, ::Dynamic queryMapper, ::Dynamic resultMapper,bool useQueryValuesAsParams){
-            	HX_STACKFRAME(&_hx_pos_c272a059e327b7a8_308_new)
-HXLINE( 309)		bool _hx_tmp;
-HXDLIN( 309)		if (!(::Std_obj::isOfType(strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
-HXLINE( 309)			_hx_tmp = !(::Reflect_obj::isFunction(strategyMethod));
+            	HX_STACKFRAME(&_hx_pos_c272a059e327b7a8_318_new)
+HXLINE( 319)		bool _hx_tmp;
+HXDLIN( 319)		if (!(::Std_obj::isOfType(strategyMethod,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
+HXLINE( 319)			_hx_tmp = !(::Reflect_obj::isFunction(strategyMethod));
             		}
             		else {
-HXLINE( 309)			_hx_tmp = false;
+HXLINE( 319)			_hx_tmp = false;
             		}
-HXDLIN( 309)		if (_hx_tmp) {
-HXLINE( 310)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
+HXDLIN( 319)		if (_hx_tmp) {
+HXLINE( 320)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("strategyMethod must be a string or function",97,7a,0d,90)));
             		}
-HXLINE( 312)		bool _hx_tmp1;
-HXDLIN( 312)		if (!(::Std_obj::isOfType(queryMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
-HXLINE( 312)			_hx_tmp1 = !(::Reflect_obj::isFunction(queryMapper));
-            		}
-            		else {
-HXLINE( 312)			_hx_tmp1 = false;
-            		}
-HXDLIN( 312)		if (_hx_tmp1) {
-HXLINE( 313)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("queryMapper must be a string or function",42,16,bc,ef)));
-            		}
-HXLINE( 315)		bool _hx_tmp2;
-HXDLIN( 315)		if (!(::Std_obj::isOfType(resultMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
-HXLINE( 315)			_hx_tmp2 = !(::Reflect_obj::isFunction(resultMapper));
+HXLINE( 322)		bool _hx_tmp1;
+HXDLIN( 322)		if (!(::Std_obj::isOfType(queryMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
+HXLINE( 322)			_hx_tmp1 = !(::Reflect_obj::isFunction(queryMapper));
             		}
             		else {
-HXLINE( 315)			_hx_tmp2 = false;
+HXLINE( 322)			_hx_tmp1 = false;
             		}
-HXDLIN( 315)		if (_hx_tmp2) {
-HXLINE( 316)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("resultMapper must be a string or function",8d,d7,71,1d)));
+HXDLIN( 322)		if (_hx_tmp1) {
+HXLINE( 323)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("queryMapper must be a string or function",42,16,bc,ef)));
             		}
-HXLINE( 318)		this->recordType = recordType;
-HXLINE( 319)		this->strategyMethod = strategyMethod;
-HXLINE( 320)		this->queryMapper = queryMapper;
-HXLINE( 321)		this->resultMapper = resultMapper;
-HXLINE( 322)		this->useQueryValuesAsParams = useQueryValuesAsParams;
+HXLINE( 325)		bool _hx_tmp2;
+HXDLIN( 325)		if (!(::Std_obj::isOfType(resultMapper,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
+HXLINE( 325)			_hx_tmp2 = !(::Reflect_obj::isFunction(resultMapper));
+            		}
+            		else {
+HXLINE( 325)			_hx_tmp2 = false;
+            		}
+HXDLIN( 325)		if (_hx_tmp2) {
+HXLINE( 326)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("resultMapper must be a string or function",8d,d7,71,1d)));
+            		}
+HXLINE( 328)		this->recordType = recordType;
+HXLINE( 329)		this->strategyMethod = strategyMethod;
+HXLINE( 330)		this->queryMapper = queryMapper;
+HXLINE( 331)		this->resultMapper = resultMapper;
+HXLINE( 332)		this->useQueryValuesAsParams = useQueryValuesAsParams;
             	}
 
 Dynamic Getter_obj::__CreateEmpty() { return new Getter_obj; }
@@ -211,8 +211,8 @@ void Getter_obj::__register()
 void Getter_obj::__boot()
 {
 {
-            	HX_STACKFRAME(&_hx_pos_c272a059e327b7a8_301_boot)
-HXDLIN( 301)		__mClass->__meta__ =  ::Dynamic(::hx::Anon_obj::Create(1)
+            	HX_STACKFRAME(&_hx_pos_c272a059e327b7a8_311_boot)
+HXDLIN( 311)		__mClass->__meta__ =  ::Dynamic(::hx::Anon_obj::Create(1)
             			->setFixed(0,HX_("obj",f7,8f,54,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("SuppressWarnings",0c,d3,d2,00),::cpp::VirtualArray_obj::__new(1)->init(0,HX_("checkstyle:FieldDocComment",70,56,1b,20))))));
             	}
